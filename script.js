@@ -190,13 +190,16 @@ const drawBricks = () => {
 };
 
 const updateHealth = () => {
-	if (state.health <= 2) {
+	if (state.health === 2) {
 		updateState({ health: 0 });
 		drawHealth();
 		setTimeout(() => {
 			alertMessage("당신은 죽었습니다. 담배는 해악입니다.");
 		}, 100);
-	} else {
+	}else if(state.health < 2){
+        return; 
+    }
+    else {
 		const health = state.health - 2;
 		updateState({ health });
 	}
