@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smoke Brick</title>
+		<link rel="shortcut icon" href="./favicon.png" type="image/png" />
+		<link rel="stylesheet" href="./style.css" />
+		<script type="module" src="./script.js" defer></script>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			section {
+				background-color: black;
+				width: 600px;
+				margin: 20px auto;
+			}
+
+			#quit {
+				display: flex;
+				justify-content: flex-end;
+				padding-bottom: 20px;
+				padding-right: 20px;
+			}
+
+			#quit button {
+				background: transparent;
+				color: white;
+				font-size: 20px;
+				font-family: sans-serif;
+				border: none;
+				cursor: pointer;
+			}
+
+			#quit button:hover {
+				filter: drop-shadow(0px 0px 5px #e2fdff);
+			}
+
+			canvas {
+				background: black;
+				display: block;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<canvas id="gameCanvas" width="600" height="800">
+				canvas가 지원되지 않는 브라우저입니다.
+			</canvas>
+			<div id="quit">
+				<button>화면을 클릭하면 게임을 시작합니다.</button>
+			</div>
+		</section>
+	</body>
+</html>
