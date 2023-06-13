@@ -3,6 +3,8 @@ import { stage } from './lungBrickData.js';
 const canvas = document.getElementById("gameCanvas");
 const infoButton = document.querySelector("#quit button");
 const context = canvas.getContext("2d");
+const leftButton = document.querySelector(".left");
+const rightButton = document.querySelector(".right");
 const ballRadius = 10;
 const paddleHeight = 10;
 const paddleWidth = 95;
@@ -258,3 +260,24 @@ const ReadyGame = () => {
 };
 
 ReadyGame();
+
+leftButton.addEventListener("mousedown", ()=>{
+	updateState({
+		leftPressed : true
+	})
+})
+leftButton.addEventListener("mouseup", ()=>{
+	updateState({
+		leftPressed : false
+	})
+})
+rightButton.addEventListener("mousedown", ()=>{
+	updateState({
+		rightPressed : true
+	})
+})
+rightButton.addEventListener("mouseup", ()=>{
+	updateState({
+		rightPressed : false
+	})
+})
