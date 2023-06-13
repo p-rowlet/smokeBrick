@@ -42,6 +42,7 @@ section{
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    user-select: none;
 }
 
 .controller button:first-child{
