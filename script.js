@@ -273,6 +273,13 @@ leftButton.addEventListener("touchend", (e)=>{
 		leftPressed : false
 	})
 })
+leftButton.addEventListener("click", (e)=>{
+	e.preventDefault();
+})
+leftButton.addEventListener("mousedown", (e)=>{
+	e.preventDefault();
+})
+
 rightButton.addEventListener("touchstart", (e)=>{
 	e.preventDefault();
 	updateState({
@@ -285,3 +292,12 @@ rightButton.addEventListener("touchend", (e)=>{
 		rightPressed : false
 	})
 })
+rightButton.addEventListener("click", (e)=>{
+	e.preventDefault();
+})
+
+rightButton.addEventListener("mousedown", (e)=>{
+	e.preventDefault();
+})
+
+
