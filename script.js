@@ -261,22 +261,26 @@ const ReadyGame = () => {
 
 ReadyGame();
 
-leftButton.addEventListener("touchstart", ()=>{
+leftButton.addEventListener("touchstart", (e)=>{
+	e.preventDefault();
 	updateState({
 		leftPressed : true
 	})
 })
-leftButton.addEventListener("touchend", ()=>{
+leftButton.addEventListener("touchend", (e)=>{
+	e.preventDefault();
 	updateState({
 		leftPressed : false
 	})
 })
-rightButton.addEventListener("touchstart", ()=>{
+rightButton.addEventListener("touchstart", (e)=>{
+	e.preventDefault();
 	updateState({
 		rightPressed : true
 	})
 })
-rightButton.addEventListener("touchend", ()=>{
+rightButton.addEventListener("touchend", (e)=>{
+	e.preventDefault();
 	updateState({
 		rightPressed : false
 	})
