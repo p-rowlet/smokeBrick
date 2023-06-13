@@ -261,22 +261,22 @@ const ReadyGame = () => {
 
 ReadyGame();
 
-leftButton.addEventListener("mousedown", ()=>{
+leftButton.addEventListener("touchstart", ()=>{
 	updateState({
 		leftPressed : true
 	})
 })
-leftButton.addEventListener("mouseup", ()=>{
+leftButton.addEventListener("touchend", ()=>{
 	updateState({
 		leftPressed : false
 	})
 })
-rightButton.addEventListener("mousedown", ()=>{
+rightButton.addEventListener("touchstart", ()=>{
 	updateState({
 		rightPressed : true
 	})
 })
-rightButton.addEventListener("mouseup", ()=>{
+rightButton.addEventListener("touchend", ()=>{
 	updateState({
 		rightPressed : false
 	})
